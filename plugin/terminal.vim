@@ -244,10 +244,10 @@ function! TMTerminalRenderStatuslineEvent()
 endfunction
 
 
+command! -nargs=1 -bar TMTerminalDeleteWithIndex :call TMTerminalDeleteWithIndex('<args>')
+command! -nargs=1 -bar TMTerminalOpenWithIndex :call TMTerminalOpenWithIndex('<args>')
 command! -nargs=0 -bar TMTerminalToggle :call TMTerminalToggle()
 command! -nargs=0 -bar TMTerminalOpenNew :call TMTerminalOpenNew()
-command! -nargs=1 -bar TMTerminalOpenWithIndex :call TMTerminalOpenWithIndex('<args>')
-command! -nargs=1 -bar TMTerminalDeleteWithIndex :call TMTerminalDeleteWithIndex('<args>')
 
 function! TMLazyLoadCMD()
     if g:tm_lazyload_cmd == 0
