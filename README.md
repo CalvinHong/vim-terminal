@@ -11,11 +11,11 @@ Use terminal easily in vim.(only support 8.1)
 ![change](img/change_tab.gif?raw=true)
 
 ## Feature
-* Quickly open and close terminal with `:VSTerminalToggle`.
-* Tab management with `:VSTerminalOpenNew`, `:VSTerminalOpenWithIndex`, `:VSTerminalDeleteWithIndex`.
-* Use `g:vs_terminal_custom_height` to config terminal height.
-* Use `g:vs_terminal_custom_pos` to config terminal position.('top' or 'bottom')
-* Use `g:vs_terminal_custom_command` to config default command.(like `/bin/sh`)
+* Quickly open and close terminal with `:TMTerminalToggle`.
+* Tab management with `:TMTerminalOpenNew`, `:TMTerminalOpenWithIndex`, `:TMTerminalDeleteWithIndex`.
+* Use `g:tm_terminal_custom_height` to config terminal height.
+* Use `g:tm_terminal_custom_pos` to config terminal position.('top' or 'bottom')
+* Use `g:tm_terminal_custom_command` to config default command.(like `/bin/sh`)
 
 
 ## Install
@@ -29,6 +29,6 @@ Below are some helper lines in my `.vimrc`
 ```vim
 " Quick toggle terminal.
 Plug 'calvinhong/vim-terminal'
-map <silent> <F7> :VSTerminalToggle<cr>
-tmap <silent> <F7> <c-w>:VSTerminalToggle<cr>
+map <silent> <F7> :TMTerminalToggle<cr>
+tmap <silent> <F7> <c-w>:TMTerminalToggle<cr>
 ```
